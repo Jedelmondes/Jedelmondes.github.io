@@ -1,0 +1,179 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+    box-sizing: border-box;
+}
+
+/* Navbar (cabeçalho) */
+.navbar {
+    background-color: #ffcc00; /* Amarelo da sua imagem */
+    padding: 20px;10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    height: 70px; /* <--- Adicione uma altura fixa para a navbar se quiser controlar melhor */
+}
+
+.navbar .logo {
+    height: 140%; /* <--- Garante que a div .logo tenha a altura total da navbar */
+    display: flex; /* Para centralizar verticalmente a imagem se ela não preencher 100% */
+    align-items: center; /* Para centralizar verticalmente a imagem */
+}
+
+.navbar .logo img {
+    height: 125px;%; /* Faz a imagem ocupar 100% da altura da div .logo */
+    width: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem ser cortada ou distorcida */
+    max-width: 150px; /* <--- Opcional: Defina uma largura máxima para o logo para ele não ficar gigante */
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.15em; /* <--- Ajuste este valor. Ex: 1.1em, 1.2em, 1.3em */
+}
+
+/* Navbar - Ícones Sociais */
+.navbar .social-icons a {
+    color: #333;
+    font-size: 28px; /* <--- Aumentei de 20px para 28px. Você pode experimentar 30px, 32px, etc. */
+    margin-left: 20px; /* <--- Opcional: Aumentei um pouco o espaçamento entre eles */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .social-icons a:hover {
+    color: #555;
+}
+
+/* Conteúdo Principal */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.content h1 {
+    text-align: center;
+    color: #ffcc00; /* Amarelo para o título principal */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* Seções de Tópicos (Consoles, Jogos, Linha do Tempo) */
+.topic-section {
+    background-color: #333; /* Fundo escuro para cada seção */
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os elementos quebrem a linha em telas menores */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topic-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffcc00; /* Amarelo para os títulos dos tópicos */
+    flex: 0 0 200px; /* Largura fixa para o título */
+    margin-right: 20px; /* Espaçamento entre o título e a descrição */
+}
+
+.topic-description {
+    flex: 1; /* A descrição ocupa o espaço restante */
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.call-to-action {
+    background-color: #ffcc00; /* Amarelo para o botão */
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Evita que o texto "Confira aqui" quebre */
+}
+
+.call-to-action:hover {
+    background-color: #e6b800; /* Amarelo mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+/* Responsividade (para telas menores) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar nav {
+    flex-grow: 1; /* Permite que o <nav> ocupe o espaço disponível e ajude na centralização */
+    display: flex; /* Adicione display flex ao nav para que ele possa centralizar seu conteúdo */
+    justify-content: center; /* Centraliza a lista ul dentro do nav */
+    align-items: center; /* Centraliza verticalmente a lista ul dentro do nav */
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; <-- Se o nav já estiver centralizando, talvez não precise aqui */
+    /* gap: 40px; <-- Adiciona um espaçamento de 40px entre os itens da lista */
+}
+
+.navbar nav ul li {
+    /* Remova ou ajuste o margin-right se usar gap */
+    margin: 0 25px; /* Define margem para a esquerda e direita para espaçamento */
+}
+
+    .navbar .social-icons {
+        margin-top: 15px;
+    }
+
+    .topic-section {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .topic-title {
+        flex: none;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .topic-description {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .call-to-action {
+        width: 100%; /* Botão ocupa 100% da largura em telas pequenas */
+        text-align: center;
+    }
+}
