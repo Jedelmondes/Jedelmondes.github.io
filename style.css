@@ -1,34 +1,55 @@
-/* Estilos Gerais */
+/* --- Estilos Gerais --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #1a1a1a; /* Fundo escuro */
-    color: #f0f0f0; /* Texto claro */
-    box-sizing: border-box;
+    color: #f0f0f0; /* Cor do texto padrão */
 }
 
-/* Navbar (cabeçalho) */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #ffcc00; /* Cor amarela para os títulos das seções */
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.call-to-action {
+    background-color: #ffcc00; /* Botão amarelo */
+    color: #1a1a1a; /* Texto do botão escuro */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.call-to-action:hover {
+    background-color: #e6b800; /* Amarelo mais escuro no hover */
+}
+
+/* --- Navbar --- */
 .navbar {
-    background-color: #ffcc00; /* Amarelo da sua imagem */
-    padding: 20px;10px 20px;
+    background-color: #ffcc00; /* Fundo amarelo da navbar */
+    padding: 4px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #333;
-    height: 70px; /* <--- Adicione uma altura fixa para a navbar se quiser controlar melhor */
-}
-
-.navbar .logo {
-    height: 140%; /* <--- Garante que a div .logo tenha a altura total da navbar */
-    display: flex; /* Para centralizar verticalmente a imagem se ela não preencher 100% */
-    align-items: center; /* Para centralizar verticalmente a imagem */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
 }
 
 .navbar .logo img {
-    height: 125px;%; /* Faz a imagem ocupar 100% da altura da div .logo */
-    width: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Garante que a imagem se ajuste sem ser cortada ou distorcida */
-    max-width: 150px; /* <--- Opcional: Defina uma largura máxima para o logo para ele não ficar gigante */
+    height: 150px; /* Ajuste o tamanho da logo */
 }
 
 .navbar nav ul {
@@ -36,26 +57,30 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens do menu quebrem linha */
+    justify-content: center; /* Centraliza itens do menu em telas menores */
 }
 
 .navbar nav ul li {
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
-.navbar nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 1.15em; /* <--- Ajuste este valor. Ex: 1.1em, 1.2em, 1.3em */
-}
-
-/* Navbar - Ícones Sociais */
 .navbar .social-icons a {
-    color: #333;
-    font-size: 28px; /* <--- Aumentei de 20px para 28px. Você pode experimentar 30px, 32px, etc. */
-    margin-left: 20px; /* <--- Opcional: Aumentei um pouco o espaçamento entre eles */
-    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 2.2em; /* Altere este valor para o tamanho desejado. Experimente 2em, 2.5em, etc. */
+    margin-left: 15px;
+    transition: color 0.3s ease;
+
+}
+
+.navbar nav ul li a:hover {
+    color: #555; /* Cor mais escura no hover */
+}
+
+.navbar .social-icons a {
+    color: #1a1a1a; /* Cor dos ícones sociais da navbar */
+    font-size: 1.5em;
+    margin-left: 15px;
     transition: color 0.3s ease;
 }
 
@@ -63,117 +88,309 @@ body {
     color: #555;
 }
 
-/* Conteúdo Principal */
-.content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.content h1 {
+/* --- Section de Programação --- */
+.programming-section {
+    padding: 60px 20px;
     text-align: center;
-    color: #ffcc00; /* Amarelo para o título principal */
-    margin-bottom: 40px;
-    font-size: 2.5em;
 }
 
-/* Seções de Tópicos (Consoles, Jogos, Linha do Tempo) */
-.topic-section {
-    background-color: #333; /* Fundo escuro para cada seção */
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
+.programming-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permite que os elementos quebrem a linha em telas menores */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
 }
 
-.topic-title {
-    font-size: 1.8em;
+.programming-image {
+    flex: 1;
+    min-width: 280px; /* Largura mínima para a imagem */
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem e o overlay respeitem o border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.programming-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Adiciona border-radius à imagem */
+}
+
+.image-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: #ffcc00; /* Texto amarelo */
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
     font-weight: bold;
-    color: #ffcc00; /* Amarelo para os títulos dos tópicos */
-    flex: 0 0 200px; /* Largura fixa para o título */
-    margin-right: 20px; /* Espaçamento entre o título e a descrição */
+    text-transform: uppercase;
 }
 
-.topic-description {
-    flex: 1; /* A descrição ocupa o espaço restante */
+.image-overlay-text h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.image-overlay-text p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.programming-description {
+    flex: 2; /* Ocupa mais espaço que as imagens */
+    text-align: center;
+    min-width: 300px;
+}
+
+.programming-description p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/* --- NOVOS ESTILOS: SEÇÕES SOBRE O MUSEU e LINHA DO TEMPO (como cards) --- */
+
+.info-cards-container {
+    padding: 40px 20px; /* Espaçamento vertical para o contêiner dos cards */
+    max-width: 1000px; /* Largura máxima do contêiner dos cards */
+    margin: 50px auto; /* Centraliza a seção e adiciona margem acima/abaixo */
+    background-color: #1a1a1a; /* Fundo que se mescla com o body */
+}
+
+.info-card {
+    background-color: #1a1a1a; /* Fundo do card, mescla com o body para o efeito de linha divisória */
+    padding: 30px 20px; /* Padding interno do card */
+    display: flex; /* Habilita o Flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    gap: 30px; /* Espaçamento entre os elementos (título, descrição, botão) */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    box-shadow: none; /* Remove a sombra que existia nos cards de exposições virtuais */
+    border-radius: 0; /* Remove border-radius para que as linhas fiquem retas */
+}
+
+/* Linhas divisórias finas entre os cards */
+.info-card:not(:first-child) {
+    border-top: 1px solid #09011d; /* Linha superior para dividir os cards, exceto o primeiro */
+}
+
+.info-card-title-area {
+    flex: 0 0 250px; /* Largura fixa para a área do título, como na imagem */
+    text-align: left; /* Alinha o texto do título à esquerda */
+    min-width: 150px; /* Garante que o título não fique muito pequeno */
+}
+
+.info-card-title {
+    color: #ffcc00; /* Cor do texto do título (SOBRE O MUSEU, LINHA DO TEMPO) */
+    font-size: 2.2em; /* Tamanho do título (ajuste para ficar como na imagem) */
+    font-weight: bold;
+    margin: 0; /* Remove margens padrão do h2 */
+    text-transform: uppercase; /* Em maiúsculas */
+    line-height: 1.2; /* Espaçamento de linha para títulos multi-linha */
+}
+
+.info-card-description-area {
+    flex: 1; /* Faz a descrição ocupar o máximo de espaço possível */
+    text-align: left; /* Alinha o texto da descrição à esquerda */
+    min-width: 300px; /* Largura mínima para a descrição antes de quebrar */
+}
+
+.info-card-description {
+    color: #f0f0f0; /* Cor do texto da descrição */
+    font-size: 1.05em;
     line-height: 1.6;
-    margin-right: 20px;
+    margin: 0; /* Remove margens padrão do p */
 }
 
-.call-to-action {
-    background-color: #ffcc00; /* Amarelo para o botão */
-    color: #333;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    white-space: nowrap; /* Evita que o texto "Confira aqui" quebre */
+.info-card-button {
+    /* Reutiliza o estilo do botão call-to-action */
+    flex-shrink: 0; /* Impede que o botão encolha */
+    min-width: 180px; /* Largura mínima do botão */
+    padding: 15px 30px; /* Padding maior para o botão */
+    font-size: 1.15em; /* Tamanho da fonte do botão */
+    margin-left: auto; /* Empurra o botão para a direita se houver espaço */
 }
 
-.call-to-action:hover {
-    background-color: #e6b800; /* Amarelo mais escuro no hover */
-    transform: translateY(-2px);
+/* --- Footer --- */
+.footer {
+    background-color: #ffcc00; /* Cor amarela do footer */
+    padding: 20px;
+    text-align: center;
+    color: #1a1a1a; /* Cor do texto do footer */
+    font-size: 0.9em;
 }
 
-/* Responsividade (para telas menores) */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .navbar nav {
-    flex-grow: 1; /* Permite que o <nav> ocupe o espaço disponível e ajude na centralização */
-    display: flex; /* Adicione display flex ao nav para que ele possa centralizar seu conteúdo */
-    justify-content: center; /* Centraliza a lista ul dentro do nav */
-    align-items: center; /* Centraliza verticalmente a lista ul dentro do nav */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
-.navbar nav ul {
+.footer-logo img {
+    height: 60px; /* Ajuste o tamanho da logo no footer */
+}
+
+.footer-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    /* justify-content: center; <-- Se o nav já estiver centralizando, talvez não precise aqui */
-    /* gap: 40px; <-- Adiciona um espaçamento de 40px entre os itens da lista */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.navbar nav ul li {
-    /* Remova ou ajuste o margin-right se usar gap */
-    margin: 0 25px; /* Define margem para a esquerda e direita para espaçamento */
+.footer-nav ul li {
+    margin: 0 15px;
 }
 
+.footer-nav ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #555;
+}
+
+.footer-social-icons a {
+    color: #1a1a1a;
+    font-size: 1.4em;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #555;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Linha divisória no footer */
+    padding-top: 15px;
+    font-size: 0.85em;
+}
+
+/* --- Responsividade --- */
+
+/* Telas menores que 992px */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar nav ul {
+        margin-top: 15px;
+    }
+    .navbar nav ul li {
+        margin: 5px 10px;
+    }
     .navbar .social-icons {
         margin-top: 15px;
     }
 
-    .topic-section {
+    .programming-details {
         flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
     }
-
-    .topic-title {
-        flex: none;
+    .programming-image {
+        min-width: unset; /* Remove min-width fixo */
+        width: 100%; /* Ocupa largura total */
+        max-width: 450px; /* Limita o tamanho máximo da imagem */
+    }
+    .programming-description {
+        min-width: unset;
         width: 100%;
-        margin-bottom: 15px;
-        margin-right: 0;
-    }
-
-    .topic-description {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-
-    .call-to-action {
-        width: 100%; /* Botão ocupa 100% da largura em telas pequenas */
         text-align: center;
+    }
+    .programming-description p {
+        font-size: 1em;
+    }
+    .section-title {
+        font-size: 2.2em;
+    }
+
+    /* Responsividade para info-cards-container */
+    .info-cards-container {
+        padding: 30px 15px;
+    }
+    .info-card {
+        flex-direction: column; /* Empilha os itens (título, descrição, botão) */
+        align-items: flex-start; /* Alinha itens empilhados à esquerda */
+        padding: 25px;
+    }
+    .info-card-title-area,
+    .info-card-description-area {
+        width: 100%; /* Ocupa a largura total quando empilhado */
+        text-align: left; /* Mantém o texto à esquerda */
+        min-width: unset; /* Remove min-width */
+    }
+    .info-card-description-area {
+        margin-bottom: 20px; /* Espaço entre descrição e botão */
+    }
+    .info-card-button {
+        width: 100%; /* Botão ocupa largura total */
+        min-width: unset; /* Remove min-width */
+        max-width: 280px; /* Limita a largura máxima do botão em telas menores */
+        margin-left: 0; /* Remove margem para centralizar */
+        margin-right: auto; /* Centraliza o botão */
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-nav ul {
+        margin-top: 15px;
+    }
+    .footer-social-icons {
+        margin-top: 15px;
+    }
+}
+
+/* Telas menores que 768px */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8em;
+    }
+    .programming-image .image-overlay-text h3 {
+        font-size: 1em;
+    }
+    .programming-image .image-overlay-text p {
+        font-size: 0.8em;
+    }
+    .info-card-title {
+        font-size: 1.8em;
+    }
+}
+
+/* Telas menores que 480px */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5em;
+    }
+    .call-to-action {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+    .info-card {
+        padding: 20px;
+    }
+    .info-card-title {
+        font-size: 1.5em;
+    }
+    .info-card-description {
+        font-size: 0.95em;
+    }
+    .info-card-button {
+        font-size: 1em;
+        padding: 12px 20px;
     }
 }

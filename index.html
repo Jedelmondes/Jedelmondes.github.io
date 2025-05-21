@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museu do Videogame - Exposições Virtuais</title>
+    <title>Museu do Videogame - Acompanhe a Programação</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -21,39 +21,92 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.youtube.com/@museudovideogameitinerante9646"><i class="fab fa-youtube"></i></a>
+            <a href="http://youtube.com/user/museudovideogame"><i class="fab fa-youtube"></i></a>
             <a href="https://www.facebook.com/museudovideogameitinerante/?locale=pt_BR"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/museudovideogameoficial/"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
 
-    <main class="content">
-        <h1>Exposições Virtuais</h1>
-
-        <section class="topic-section">
-            <div class="topic-title">CONSOLES</div>
-            <div class="topic-description">
-                Explore o coração da história dos videogames! Nesta seção, apresentamos os consoles mais icônicos que moldaram gerações de jogadores e revelamos quais dessas máquinas incríveis você poderá encontrar e interagir durante sua visita ao museu. Prepare-se para uma viagem nostálgica!
+   <main class="content">
+    <section class="programming-section">
+        <h1 class="section-title">ACOMPANHE A NOSSA PROGRAMAÇÃO</h1>
+        <div class="programming-details">
+            <div class="programming-image left-image">
+                <img src="imagens/mortalkombat.png.png" alt="Torneio Mortal Kombat 3 Super Nintendo">
+                <div class="image-overlay-text">
+                    <h3>TORNEIO</h3>
+                    <p>MORTAL KOMBAT 3</p>
+                    <p>SUPER NINTENDO</p>
+                </div>
             </div>
-            <button class="call-to-action">Confira aqui</button>
+            <div class="programming-description">
+                <p>O Museu do Videogame Itinerante é uma experiência única e divertida, que leva a história dos videogames para perto do público em diferentes cidades, com o grande diferencial de permitir que os visitantes joguem os consoles expostos. É uma verdadeira viagem no tempo para os amantes de games!</p>
+                <button class="call-to-action main-button" onclick="window.location.href='visite-o-museu.html'">ACESSE NOSSA PROGRAMAÇÃO</button>
+            </div>
+            <div class="programming-image right-image">
+                <img src="imagens/Captura de tela 2025-05-20 193833.png" alt="Torneio Street Fighter 6 Playstation 5">
+                <div class="image-overlay-text">
+                    <h3>TORNEIO</h3>
+                    <p>Street Fighter 6</p>
+                    <p>Playstation 5</p>
+                </div>
+                </div>
+        </div>
+    </section>
+</main>
+                </div>
+            </div>
         </section>
 
-        <section class="topic-section">
-            <div class="topic-title">JOGOS</div>
-            <div class="topic-description">
-                Mergulhe no universo dos games! Aqui, além de descobrir os jogos eletrizantes que estarão disponíveis para você jogar no museu, você terá a oportunidade de conhecer a fascinante história por trás de cada um deles, desde seus primórdios até os clássicos atemporais.
+        <section class="info-cards-container">
+            <div class="info-card">
+                <div class="info-card-title-area">
+                    <h2 class="info-card-title">SOBRE O MUSEU</h2>
+                </div>
+                <div class="info-card-description-area">
+                    <p class="info-card-description">Explore o universo dos videogames com o Museu do Videogame Itinerante! Somos a maior exposição móvel de consoles e jogos da América Latina, com um acervo vasto que abrange desde os primeiros videogames da história até as últimas inovações. O melhor de tudo? Você pode jogar e reviver grandes momentos em centenas de consoles originais, tornando a experiência interativa e inesquecível para todas as idades.</p>
+                </div>
+                <button class="call-to-action info-card-button">Saiba mais</button>
             </div>
-            <button class="call-to-action">Confira aqui</button>
-        </section>
 
-        <section class="topic-section">
-            <div class="topic-title">LINHA DO TEMPO</div>
-            <div class="topic-description">
-                Embarque em uma jornada através do tempo e acompanhe a incrível evolução do videogame! Nossa linha do tempo interativa apresenta os marcos mais importantes, as inovações revolucionárias e os momentos cruciais que transformaram a indústria dos jogos como a conhecemos hoje.
+            <div class="info-card">
+                <div class="info-card-title-area">
+                    <h2 class="info-card-title">LINHA DO TEMPO</h2>
+                </div>
+                <div class="info-card-description-area">
+                    <p class="info-card-description">Embarque em uma jornada através do tempo e acompanhe a incrível evolução do videogame! Nossa linha do tempo interativa apresenta os marcos mais importantes, as inovações revolucionárias e os momentos cruciais que transformaram a indústria dos jogos como a conhecemos hoje.</p>
+                </div>
+               <a href="linha-do-tempo.html" class="info-card-link">
+    <button class="call-to-action info-card-button">Confira aqui</button>
+</a>
             </div>
-            <button class="call-to-action">Confira aqui</button>
         </section>
+        <div id="gamesList"></div> 
+
     </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="logomuseudovideogame.png" alt="Logo Museu do Videogame">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social-icons social-icons">
+                <a href="https://www.youtube.com/@museudovideogameitinerante9646"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/museudovideogameitinerante/?locale=pt_BR"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/museudovideogameoficial/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Museu do Videogame. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
