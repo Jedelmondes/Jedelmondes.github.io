@@ -32,7 +32,9 @@ Durante a navegação, os visitantes podem descobrir consoles icônicos, jogos m
 - O projeto não inclui desenvolvimento de hardware ou simulação de jogos.
 - O conteúdo se restringe à história dos **consoles**, não abrangendo o desenvolvimento de jogos ou cultura gamer.
 
-## 👥 Equipe Envolvida
+## 👥 Equipe
 
-- Desenvolvedores de software
-- Designers gráficos
+- Giovanna Gomes Cortez
+- Giovanna Oliveira Biribili
+- Heloisa Moreira de Souza
+- Jennifer de Sá Delmondes Ferreira
