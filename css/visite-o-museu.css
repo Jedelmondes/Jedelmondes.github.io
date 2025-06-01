@@ -46,17 +46,25 @@
 }
 
 .how-to-get .info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     flex: 1; 
     min-width: 300px;
 }
 
 .how-to-get .info-card h2 {
+    text-align: center;
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
     color: #FFD700;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
 .how-to-get .info-card p {
+    font-family: 'Cambo', serif;
     font-size: 1.1em;
     margin-bottom: 15px;
     display: flex; 
@@ -94,6 +102,8 @@
 }
 
 .agenda-button {
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
     background-color: #FFD700;
     color: #333;
     border: none;
@@ -122,18 +132,22 @@
 }
 
 .about-experience h2 {
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
     color: #FFD700;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 .about-experience p:first-of-type { 
+    font-family: 'Cambo', serif;
     font-size: 1.2em;
     color: #ccc;
     margin-bottom: 20px;
 }
 
 .about-experience p:last-of-type {
+    font-family: 'Cambo', serif;
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 800px;
