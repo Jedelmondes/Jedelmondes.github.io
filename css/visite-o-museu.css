@@ -1,16 +1,15 @@
-/* visite-o-museu.css */
-
 /* --- Estilos Gerais para a Página de Visita --- */
+
 .visit-content {
-    background-color: #1a1a1a; /* Fundo escuro geral */
-    color: #f0f0f0; /* Cor do texto padrão */
-    padding-bottom: 50px; /* Espaço no final da página */
+    background-color: #1a1a1a; 
+    color: #f0f0f0; 
+    padding-bottom: 50px; 
 }
 
 .page-header {
     text-align: center;
     padding: 30px 20px 40px;
-    background-color: #222; /* Fundo mais escuro para o cabeçalho */
+    background-color: #222; 
     margin-bottom: 30px;
 }
 
@@ -21,7 +20,7 @@
 }
 
 .page-header .section-title {
-    color: #FFD700; /* Título amarelo */
+    color: #FFD700; 
     font-size: 2.8em;
     margin-top: 0;
     text-transform: uppercase;
@@ -29,26 +28,26 @@
 }
 
 .visit-section {
-    max-width: 1000px; /* Largura máxima para a maioria das seções */
-    margin: 0 auto 40px auto; /* Centraliza e adiciona margem inferior */
-    padding: 0 20px; /* Padding nas laterais para responsividade */
+    max-width: 1000px; 
+    margin: 0 auto 40px auto; 
+    padding: 0 20px; 
 }
 
 /* --- Seção "Como Chegar" --- */
 .how-to-get {
     display: flex;
-    justify-content: space-between; /* Espaço entre o card de info e a imagem */
+    justify-content: space-between; 
     align-items: center;
-    gap: 30px; /* Espaçamento entre os dois blocos */
-    background-color: #333; /* Fundo do card */
+    gap: 30px; 
+    background-color: #333; 
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .how-to-get .info-card {
-    flex: 1; /* Ocupa o espaço restante */
-    min-width: 300px; /* Largura mínima para o card de info */
+    flex: 1; 
+    min-width: 300px;
 }
 
 .how-to-get .info-card h2 {
@@ -60,7 +59,7 @@
 .how-to-get .info-card p {
     font-size: 1.1em;
     margin-bottom: 15px;
-    display: flex; /* Para alinhar o ícone e o texto */
+    display: flex; 
     align-items: center;
 }
 
@@ -68,24 +67,24 @@
     color: #FFD700;
     margin-right: 10px;
     font-size: 1.2em;
-    width: 20px; /* Garante alinhamento dos ícones */
+    width: 20px; 
     text-align: center;
 }
 
 .how-to-get .image-display {
-    flex-shrink: 0; /* Impede que a imagem encolha */
-    width: 350px; /* Largura fixa para a imagem do lado */
-    height: 250px; /* Altura fixa */
+    flex-shrink: 0; 
+    width: 350px; 
+    height: 250px;
     border-radius: 8px;
-    overflow: hidden; /* Garante que a imagem não saia da borda */
+    overflow: hidden; 
 }
 
 .how-to-get .image-display img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* A imagem preenche o container, cortando se necessário */
-    display: block; /* Remove espaço extra abaixo da imagem */
-    border-radius: 8px; /* Borda arredondada para a imagem também */
+    object-fit: cover; 
+    display: block; 
+    border-radius: 8px;
 }
 
 
@@ -128,17 +127,17 @@
     margin-bottom: 10px;
 }
 
-.about-experience p:first-of-type { /* O subtítulo menor */
+.about-experience p:first-of-type { 
     font-size: 1.2em;
     color: #ccc;
     margin-bottom: 20px;
 }
 
-.about-experience p:last-of-type { /* O parágrafo principal */
+.about-experience p:last-of-type {
     font-size: 1.1em;
     line-height: 1.6;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza o parágrafo */
+    margin: 0 auto;
 }
 
 /* --- Seção Galeria e CTA Final --- */
@@ -146,41 +145,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px; /* Espaçamento entre galeria e texto CTA */
-    padding: 20px; /* Padding para esta seção */
+    gap: 30px;  
+    padding: 20px; 
 }
 
 .gallery-cta .image-gallery {
     display: flex;
-    gap: 15px; /* Espaço entre as duas imagens da galeria */
-    flex-shrink: 0; /* Impede que a galeria encolha */
+    gap: 15px;  
+    flex-shrink: 0; 
 }
 
 .gallery-cta .image-gallery img {
-    width: 280px; /* Largura das imagens da galeria */
-    height: 200px; /* Altura das imagens da galeria */
+    width: 280px; 
+    height: 200px; 
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .gallery-cta .cta-text {
-    text-align: right; /* Alinha o texto à direita */
-    flex: 1; /* Ocupa o espaço restante */
+    text-align: right; 
+    flex: 1; 
 }
 
 .gallery-cta .cta-text .press-start {
-    font-family: 'Press Start 2P', cursive; /* Fonte pixelada se você tiver */
-    font-size: 2.5em; /* Tamanho do "Press Start" */
-    color: #FFD700;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 2.5em; 
     margin-bottom: 5px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Sombra para o texto */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.gallery-cta .cta-text p:last-of-type, .desbloquear-missao-text{
+    color: #FFD700;
 }
 
 .gallery-cta .cta-text p:last-of-type {
-    font-size: 1.3em;
-    color: #ccc;
+    font-size: 2rem;
     line-height: 1.4;
+}
+
+.desbloquear-missao-text{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    font-weight: 400; 
 }
 
 
@@ -189,28 +196,28 @@
 @media (max-width: 992px) {
     .how-to-get,
     .gallery-cta {
-        flex-direction: column; /* Coloca os itens em coluna */
-        text-align: center; /* Centraliza texto em colunas */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .how-to-get .info-card {
-        min-width: unset; /* Remove min-width */
-        width: 100%; /* Ocupa toda a largura */
+        min-width: unset; 
+        width: 100%; 
     }
 
     .how-to-get .image-display {
-        width: 80%; /* A imagem ocupa mais espaço */
-        height: 200px; /* Altura ajustada */
-        max-width: 400px; /* Limite máximo */
+        width: 80%; 
+        height: 200px; 
+        max-width: 400px; 
     }
 
     .gallery-cta .cta-text {
-        text-align: center; /* Centraliza o texto CTA */
+        text-align: center; 
     }
 
     .gallery-cta .image-gallery {
-        flex-direction: column; /* Imagens da galeria em coluna */
-        align-items: center; /* Centraliza imagens */
+        flex-direction: column;
+        align-items: center; 
     }
 }
 
@@ -244,7 +251,7 @@
     }
 
     .gallery-cta .image-gallery img {
-        width: 250px; /* Um pouco menor para imagens da galeria */
+        width: 250px; 
         height: 180px;
     }
 }
@@ -265,8 +272,8 @@
         padding: 10px 20px;
     }
     .gallery-cta .image-gallery img {
-        width: 100%; /* Imagens da galeria ocupam 100% em mobile */
-        max-width: 250px; /* Limite para não ficar muito grande */
-        height: auto; /* Altura ajustada */
+        width: 100%; 
+        max-width: 250px; 
+        height: auto; 
     }
 }
