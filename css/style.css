@@ -205,9 +205,10 @@ nav ul li a {
 
 
 @media (max-width: 992px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
+    .navbar nav ul {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .navbar nav ul {
         margin-top: 15px;
@@ -315,4 +316,113 @@ nav ul li a {
         font-size: 1em;
         padding: 12px 20px;
     }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 38px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+
+  /* Logo centralizada e no fluxo natural */
+  .logo-top-left {
+    position: static; 
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .logo-top-left img {
+    width: 10rem;
+  }
+
+  /* backSession centralizada e com margem confortável */
+  .backSession {
+    margin: 10px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 90%;
+  }
+
+  .backSession a {
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  /* Navbar vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* Logo dentro da navbar escondida para não duplicar */
+  .navbar .logo {
+    display: none;
+  }
+
+  /* Menu centralizado e com wrap */
+  .navbar nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navbar nav ul li {
+    margin: 5px 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  /* Ícones sociais abaixo da navbar, linha separada */
+  .social-icons {
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar .social-icons a {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+  }
+
+  .navbar .social-icons a:hover {
+    color: #555;
+  }
+}
+
+/* Telas menores que 480px: mantém o mesmo layout, só reduz fontes e espaçamentos */
+@media (max-width: 480px) {
+  .backSession a {
+    font-size: 14px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+  .logo-top-left img {
+    width: 8rem;
+  }
 }
