@@ -1,0 +1,130 @@
+
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.timeline-horizontal {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+
+  border-top: 1px solid #ffffff;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  padding-top: 40px;
+  overflow-x: auto;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-block {
+  position: relative;
+  width: 150px;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  flex-shrink: 0;
+
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2px auto;
+}
+
+.event-block::before {
+  content: "";
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.event-block h2,
+.event-block h3 {
+  margin-bottom: 10px;
+  font-family: "Calistoga", cursive;
+  font-weight: 100;
+}
+
+.event-block img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+.games {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 10px;
+  flex-wrap: nowrap; 
+}
+
+.games img {
+  position: relative;
+  width: 60px; 
+  height: auto;
+  display: block;
+}
+
+.attachGames-line {
+  position: relative;
+  width: 49%;
+  max-width: 120px;
+  margin: 10px auto;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.attachGames-line::before,
+.attachGames-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 12px;
+  background-color: white;
+}
+
+.attachGames-line::before {
+  left: 0 auto;
+}
+
+.attachGames-line::after {
+  right: 0;
+}
+
+/* Responsividade */
+
+/* @media (max-width: 600px) {
+    .timeline-horizontal {
+      gap: 20px;
+      padding-top: 25px;
+    }
+    
+    .event-block {
+      width: 150px;
+      padding: 10px;
+    }
+    
+    .games img {
+      width: 50px;
+    }
+  }
+   */

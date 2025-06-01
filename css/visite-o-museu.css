@@ -1,0 +1,293 @@
+/* --- Estilos Gerais para a Página de Visita --- */
+
+.visit-content {
+    background-color: #1a1a1a; 
+    color: #f0f0f0; 
+    padding-bottom: 50px; 
+}
+
+.page-header {
+    text-align: center;
+    padding: 30px 20px 40px;
+    background-color: #222; 
+    margin-bottom: 30px;
+}
+
+.page-header .breadcrumb {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.page-header .section-title {
+    color: #FFD700; 
+    font-size: 2.8em;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.visit-section {
+    max-width: 1000px; 
+    margin: 0 auto 40px auto; 
+    padding: 0 20px; 
+}
+
+/* --- Seção "Como Chegar" --- */
+.how-to-get {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 30px; 
+    background-color: #333; 
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.how-to-get .info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    flex: 1; 
+    min-width: 300px;
+}
+
+.how-to-get .info-card h2 {
+    text-align: center;
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
+    color: #FFD700;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.how-to-get .info-card p {
+    font-family: 'Cambo', serif;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: center;
+}
+
+.how-to-get .info-card p i {
+    color: #FFD700;
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 20px; 
+    text-align: center;
+}
+
+.how-to-get .image-display {
+    flex-shrink: 0; 
+    width: 350px; 
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.how-to-get .image-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+    border-radius: 8px;
+}
+
+
+/* --- Seção do Botão Agendar --- */
+.agenda-button-section {
+    text-align: center;
+}
+
+.agenda-button {
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.agenda-button:hover {
+    background-color: #e0b000;
+    transform: translateY(-2px);
+}
+
+/* --- Seção "Pronto Para Jogar" --- */
+.about-experience {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.about-experience h2 {
+    font-family: "Calistoga", cursive;
+    font-weight: 100;
+    color: #FFD700;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-experience p:first-of-type { 
+    font-family: 'Cambo', serif;
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.about-experience p:last-of-type {
+    font-family: 'Cambo', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Seção Galeria e CTA Final --- */
+.gallery-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;  
+    padding: 20px; 
+}
+
+.gallery-cta .image-gallery {
+    display: flex;
+    gap: 15px;  
+    flex-shrink: 0; 
+}
+
+.gallery-cta .image-gallery img {
+    width: 280px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-cta .cta-text {
+    text-align: right; 
+    flex: 1; 
+}
+
+.gallery-cta .cta-text .press-start {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 2.5em; 
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.gallery-cta .cta-text p:last-of-type, .desbloquear-missao-text{
+    color: #FFD700;
+}
+
+.gallery-cta .cta-text p:last-of-type {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.desbloquear-missao-text{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    font-weight: 400; 
+}
+
+
+/* --- Media Queries para Responsividade --- */
+
+@media (max-width: 992px) {
+    .how-to-get,
+    .gallery-cta {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .how-to-get .info-card {
+        min-width: unset; 
+        width: 100%; 
+    }
+
+    .how-to-get .image-display {
+        width: 80%; 
+        height: 200px; 
+        max-width: 400px; 
+    }
+
+    .gallery-cta .cta-text {
+        text-align: center; 
+    }
+
+    .gallery-cta .image-gallery {
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header .section-title {
+        font-size: 2.2em;
+    }
+
+    .agenda-button {
+        padding: 12px 30px;
+        font-size: 1.2em;
+    }
+
+    .how-to-get {
+        padding: 20px;
+    }
+    .how-to-get .info-card h2,
+    .about-experience h2 {
+        font-size: 1.8em;
+    }
+    .how-to-get .info-card p,
+    .about-experience p {
+        font-size: 1em;
+    }
+
+    .gallery-cta .cta-text .press-start {
+        font-size: 2em;
+    }
+    .gallery-cta .cta-text p:last-of-type {
+        font-size: 1.1em;
+    }
+
+    .gallery-cta .image-gallery img {
+        width: 250px; 
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header .section-title {
+        font-size: 1.8em;
+    }
+    .visit-section {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .how-to-get, .about-experience {
+        padding: 15px;
+    }
+    .agenda-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .gallery-cta .image-gallery img {
+        width: 100%; 
+        max-width: 250px; 
+        height: auto; 
+    }
+}
