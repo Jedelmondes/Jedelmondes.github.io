@@ -140,6 +140,7 @@ nav ul li a {
 
 /* --- Footer --- */
 .footer {
+    margin-top: 6.5rem;
     background-color: #ffcc00; 
     padding: 20px;
     text-align: center;
