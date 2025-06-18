@@ -10,6 +10,7 @@ h1 {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto;
+  
 
   border-top: 1px solid #ffffff;
 
@@ -40,6 +41,8 @@ h1 {
   align-items: center;
 
   padding: 2px auto;
+
+  cursor: pointer;
 }
 
 .event-block::before {
@@ -65,6 +68,37 @@ h1 {
   height: auto;
   margin: 10px auto;
   display: block;
+}
+
+.event-block .wrap-games {
+  display: none;
+}
+
+.event-block:hover .wrap-games {
+  display: block;
+}
+
+.event-block .wrap-games {
+  opacity: 0;
+  transform: scale(0.95) translateY(10px);
+  pointer-events: none;
+}
+
+.event-block:hover .wrap-games {
+  animation: fadeInPopup 0.4s ease forwards;
+  animation-delay: 0.3s; 
+  pointer-events: auto;
+}
+
+@keyframes fadeInPopup {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .games {
@@ -112,7 +146,7 @@ h1 {
 
 /* Responsividade */
 
-/* @media (max-width: 600px) {
+ @media (max-width: 600px) {
     .timeline-horizontal {
       gap: 20px;
       padding-top: 25px;
@@ -127,4 +161,4 @@ h1 {
       width: 50px;
     }
   }
-   */
+  
